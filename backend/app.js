@@ -28,7 +28,7 @@ database.mongoConnect();
 //app.use('/productos',require('./routes/productos.router')) ;
 app.use('/productos', productosRouter);
 
-app.use(auth);
+//app.use(auth);
 app.use('/usuarios', usuariosRouter)
 
 
