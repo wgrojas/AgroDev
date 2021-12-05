@@ -28,7 +28,7 @@ database.mongoConnect();
 //app.use('/productos',require('./routes/productos.router')) ;
 app.use('/productos', productosRouter);
 
-//app.use(auth);
+app.use(auth);
 app.use('/usuarios', usuariosRouter)
 
 
@@ -46,7 +46,7 @@ app.use(function(err, req, res, next) {
 
   // render the error page
   res.status(err.status || 500);
-  res.send('error pagina no encontrada');
+  res.send('pagina no encontrada');
 });
 
 module.exports = app;

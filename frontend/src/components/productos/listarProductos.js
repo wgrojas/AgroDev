@@ -25,7 +25,7 @@ export default class ListarProductos extends Component {
     }
 
     fetchProductos(){
-        fetch('http://compuback.herokuapp.com/productos')
+        fetch('localhost:3001/productos')
         .then(res => res.json())
         .then(data => {
             this.setState({listaProductos:data})

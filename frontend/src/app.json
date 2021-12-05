@@ -1,3 +1,3 @@
 {
-    "APIHOST":"http://compuback.herokuapp.com"
+    "APIHOST":"http://localhost:3001"
 }
