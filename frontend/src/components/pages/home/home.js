@@ -1,5 +1,5 @@
 import React from "react";
-import { Carousel, Card, Row, Button, Container } from "react-bootstrap";
+import { Carousel, Card, Row, Button, Container, Col} from "react-bootstrap";
 import "./home.css";
 
 export default class Home extends React.Component {
@@ -51,37 +51,45 @@ export default class Home extends React.Component {
         </Carousel>
 
         <Container>
-                <Row>
-                    <h2>Productos Destacados</h2>
-                    <Card style={{ width: '22rem' }}>
-                        <Card.Img variant="top" src="https://okdiario.com/img/2019/07/17/los-curiosos-beneficios-y-propiedades-de-las-hojas-de-platano-655x368.jpg" />
-                        <Card.Body>
-                            <Card.Title>Plátano</Card.Title>
-                            
-                            {/*<Button variant="primary">Ver más...</Button>*/}
-                        </Card.Body>
-                    </Card>
-                    <Card style={{ width: '22rem' }}>
-                        <Card.Img variant="top" src="https://dam.cocinafacil.com.mx/wp-content/uploads/2020/07/yuca.jpg" />
-                        <Card.Body>
-                            <Card.Title>Yuca</Card.Title>
-                            
-                            {/*<Button variant="primary">Ver más...</Button>*/}
-                        </Card.Body>
-                    </Card>
-                    <Card style={{ width: '22rem' }}>
-                        <Card.Img variant="top" src="https://www.rionegro.com.ar/wp-content/uploads/2021/06/leche.jpg" />
-                        <Card.Body>
-                            <Card.Title>Leche</Card.Title>
-                            
-                            {/*<Button variant="primary">Ver más...</Button>*/}
-                        </Card.Body>
-                    </Card>
-                </Row>
-            </Container>
+          <Row>
+            <h2>Productos Destacados</h2>
+            <Row className="card-group" sm="3">
+              <Card style={{ width: "22rem" }} className="card">
+                <Card.Img
+                  variant="top"
+                  src="https://okdiario.com/img/2019/07/17/los-curiosos-beneficios-y-propiedades-de-las-hojas-de-platano-655x368.jpg"
+                />
+                <Card.Body>
+                  <Card.Title>Plátano</Card.Title>
 
+                  {/*<Button variant="primary">Ver más...</Button>*/}
+                </Card.Body>
+              </Card>
+              <Card style={{ width: "22rem" }} className="card">
+                <Card.Img
+                  variant="top"
+                  src="https://dam.cocinafacil.com.mx/wp-content/uploads/2020/07/yuca.jpg"
+                />
+                <Card.Body>
+                  <Card.Title>Yuca</Card.Title>
 
-        
+                  {/*<Button variant="primary">Ver más...</Button>*/}
+                </Card.Body>
+              </Card>
+              <Card style={{ width: "22rem" }} className="card">
+                <Card.Img
+                  variant="top"
+                  src="https://www.rionegro.com.ar/wp-content/uploads/2021/06/leche.jpg"
+                />
+                <Card.Body>
+                  <Card.Title>Leche</Card.Title>
+
+                  {/*<Button variant="primary">Ver más...</Button>*/}
+                </Card.Body>
+              </Card>
+            </Row>
+          </Row>
+        </Container>
       </>
     );
   }
