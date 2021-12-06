@@ -1,6 +1,5 @@
 import React from "react";
 import {Carousel, Container} from "react-bootstrap";
-import Productos from "../../productos/productos";
 import ListarProductos from "../../productos/listarProductos";
 import "./home.css";
 
