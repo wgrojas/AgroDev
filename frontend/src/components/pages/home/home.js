@@ -58,7 +58,7 @@ export default class Home extends React.Component {
                         <Card.Body>
                             <Card.Title>Plátano</Card.Title>
                             
-                            <Button variant="primary">Ver más...</Button>
+                            {/*<Button variant="primary">Ver más...</Button>*/}
                         </Card.Body>
                     </Card>
                     <Card style={{ width: '22rem' }}>
@@ -66,7 +66,7 @@ export default class Home extends React.Component {
                         <Card.Body>
                             <Card.Title>Yuca</Card.Title>
                             
-                            <Button variant="primary">Ver más...</Button>
+                            {/*<Button variant="primary">Ver más...</Button>*/}
                         </Card.Body>
                     </Card>
                     <Card style={{ width: '22rem' }}>
@@ -74,7 +74,7 @@ export default class Home extends React.Component {
                         <Card.Body>
                             <Card.Title>Leche</Card.Title>
                             
-                            <Button variant="primary">Ver más...</Button>
+                            {/*<Button variant="primary">Ver más...</Button>*/}
                         </Card.Body>
                     </Card>
                 </Row>
