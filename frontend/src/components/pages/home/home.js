@@ -54,7 +54,7 @@ export default class Home extends React.Component {
                         </Card.Body>
                     </Card>
                     <Card style={{ width: '22rem' }}>
-                        <Card.Img variant="top" src="https://cadenaser00.epimg.net/ser/imagenes/2019/01/11/sociedad/1547209895_759737_1547210248_noticia_normal.jpg" />
+                        <Card.Img variant="top" src="https://www.rionegro.com.ar/wp-content/uploads/2021/06/leche.jpg" />
                         <Card.Body>
                             <Card.Title>Leche</Card.Title>
                             
