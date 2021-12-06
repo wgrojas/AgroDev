@@ -17,6 +17,8 @@ import Logo from "../Logo.png";
 const cookies = new Cookies();
 //const [show,setShow] = useState(true);
 const show = true;
+
+
 export default class Menu extends React.Component {
   constructor(props) {
     super(props);
@@ -75,12 +77,12 @@ export default class Menu extends React.Component {
                   <FontAwesomeIcon icon={faUserCircle} />{" "}
                   {/* <Nav.Link href="/login">Login</Nav.Link> */}{" "}
                 </Row>
-                <Row>Registrarse</Row>
+                {/* <Row>Registrarse</Row> */}
               </Dropdown.Header>
               <Dropdown.Divider />
-              <Dropdown.Item href="/productos">Nuestros Productos</Dropdown.Item>
+              <Dropdown.Item href="/registro">Registro</Dropdown.Item>
               <Dropdown.Divider />
-              <Dropdown.Item href="/panel">Login</Dropdown.Item>
+              <Dropdown.Item href="/panel">Iniciar sesión</Dropdown.Item>
               <Dropdown.Divider />
               <Dropdown.Item onClick={() => this.logout()}>
                 Cerrar sesión

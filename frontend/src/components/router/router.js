@@ -2,7 +2,8 @@ import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import PrivateRoute from '../auth/privateroute';
 
-import login from '../login/login';
+import Login from '../login/login';
+import Registro from '../registro/registro'
 import Productos from '../productos/index';
 import Home from '../pages/home/home';
 import error from "../404.jpg";
@@ -15,7 +16,8 @@ export default function AppRouter() {
     <Router>
       <Switch>
         <Route exact path={['/']} component={Home} />
-        <Route exact path={['/login']} component={login} />
+        <Route exact path={['/registro']} component={Registro} />
+        <Route exact path={['/login']} component={Login} />
         <PrivateRoute exact path="/panel" component={Productos} />
         <Route exact path={["/productos"]} component={ListarProductos}/>
         {/* <PrivateRoute exact path={["/crearProductos"]} component={CrearProducto}/> */}

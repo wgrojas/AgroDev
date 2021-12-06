@@ -5,7 +5,8 @@ const UsuarioSchema = new Schema({
     usuario: {
         type: String,
         required: true,
-        max: 100
+        max: 100,
+        unique:true
     },
     pass: {
         type: String,
