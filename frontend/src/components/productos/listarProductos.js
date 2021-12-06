@@ -25,7 +25,7 @@ export default class ListarProductos extends Component {
     }
 
     fetchProductos(){
-        fetch('http://localhost:3001/productos')
+        fetch('https://back-agrodev.herokuapp.com/productos')
         .then(res => res.json())
         .then(data => {
             this.setState({listaProductos:data})
