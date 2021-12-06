@@ -1,7 +1,9 @@
 .App {
   text-align: center;
 }
-
+.footer{
+  margin-top: 400px;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;

@@ -7,10 +7,15 @@ import Footer from './components/footer/footer'
 
 function App() {
   return (
+    <div>
     <div className="App">
       <Menu />
       <AppRouter />
-      <Footer/>
+      
+    </div>
+    <div className="footer">
+    <Footer/>
+    </div>
     </div>
   );
 }
